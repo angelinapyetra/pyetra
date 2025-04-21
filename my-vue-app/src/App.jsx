@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div style={{ 
+      textAlign: 'center', 
+      marginTop: '50px', 
+      fontFamily: 'Arial, sans-serif', 
+      backgroundColor: '#fef6f9',
+      height: '100vh',
+      padding: '20px'
+    }}>
+      <h1 style={{ fontSize: '3rem', color: '#e91e63' }}>🧵 Pure Threads 🛍️</h1>
+      <p style={{ fontSize: '1.3rem', color: '#444' }}>
+        Bem-vinda à loja mais fofa da internet!
       </p>
-    </>
-  )
+      <button style={{
+        padding: '10px 20px',
+        fontSize: '1rem',
+        backgroundColor: '#e91e63',
+        color: '#fff',
+        border: 'none',
+        borderRadius: '8px',
+        marginTop: '20px',
+        cursor: 'pointer'
+      }}>
+        Ver produtos
+      </button>
+    </div>
+  );
 }
 
-export default App
+export default App;
